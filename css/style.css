@@ -79,7 +79,7 @@ img {
 }
 .card-body-header span {
   color: hsl(277deg, 64%, 61%);
-  font-weight: 200;
+  font-weight: inherit;
 }
 .card-body .lead {
   font-family: "Inter", sans-serif;
