@@ -50,19 +50,22 @@ img {
   overflow: hidden;
 }
 .card-image {
-  height: 15rem;
   position: relative;
+  height: 15rem;
+  background-color: rgb(170, 92, 219);
+  width: 100%;
+}
+.card-image::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
   width: 100%;
   background: url("../images/image-header-desktop.jpg") no-repeat 50% 50%;
   background-size: cover;
-}
-.card-image .overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0.5;
-  z-index: 9;
-  background-color: #8a0cd8;
+  mix-blend-mode: multiply;
 }
 .card-body {
   padding: 2rem;
@@ -79,7 +82,6 @@ img {
 }
 .card-body-header span {
   color: hsl(277deg, 64%, 61%);
-  font-weight: inherit;
 }
 .card-body .lead {
   font-family: "Inter", sans-serif;
@@ -93,19 +95,20 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.6rem;
+  font-size: 0.7rem;
   font-family: "Lexend Deca", sans-serif;
   font-weight: 500;
 }
 .stats .stat {
   letter-spacing: 1px;
   margin-bottom: 2rem;
+  font-weight: inherit;
   text-transform: uppercase;
 }
 .stats .stat h2 {
   color: white;
   font-weight: inherit;
-  font-size: 3;
+  font-size: 1.2rem;
   margin-bottom: 0.2rem;
 }
 .stats .stat p {
@@ -125,12 +128,12 @@ img {
   color: hsl(228deg, 45%, 44%);
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1024px) {
   .card {
     max-width: none;
     width: 100%;
     display: grid;
-    height: auto;
+    height: 50%;
     text-align: left;
     grid-template-columns: repeat(2, 50%);
   }
@@ -139,13 +142,18 @@ img {
     grid-row: 1/2;
     height: 100%;
     width: 100%;
+  }
+  .card-image::before {
     background-image: url("../images/image-header-desktop.jpg");
   }
   .card-body {
-    padding: 4rem;
+    padding: 4rem 6rem 3rem 4rem;
   }
   .card-body-header {
-    font-size: 0.8rem;
+    font-size: 1.1rem;
+  }
+  .card-body .lead {
+    font-size: 0.9rem;
   }
 
   .stats {
@@ -153,7 +161,7 @@ img {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .stats .stat {
     margin-right: 3rem;
