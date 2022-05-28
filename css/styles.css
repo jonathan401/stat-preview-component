@@ -116,12 +116,28 @@ img {
   font-size: 0.7rem;
 }
 
+.attribution {
+  margin: 1rem;
+  font-size: 1rem;
+  color: hsla(0deg, 0%, 100%, 0.6);
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+.attribution a {
+  color: white;
+}
+
+.attribution a:hover {
+  color: hsl(228deg, 45%, 44%);
+}
+
 @media screen and (min-width: 1024px) {
   .card {
     max-width: none;
     width: 100%;
     display: grid;
-    height: 25rem;
+    height: auto;
     text-align: left;
     grid-template-columns: repeat(2, 50%);
   }
@@ -135,10 +151,13 @@ img {
     background-image: url("../images/image-header-desktop.jpg");
   }
   .card-body {
-    padding: 4rem;
+    padding: 3rem;
   }
   .card-body-header {
     font-size: 0.8rem;
+  }
+  .card-body .lead {
+    font-size: 0.9rem;
   }
 
   .stats {
@@ -146,11 +165,12 @@ img {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    background-color: red;
   }
   .stats .stat {
     margin-right: 3rem;
   }
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */
