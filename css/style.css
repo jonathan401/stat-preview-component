@@ -125,6 +125,10 @@ img {
 }
 
 .attribution a {
+  color: white;
+}
+
+.attribution a:hover {
   color: hsl(228deg, 45%, 44%);
 }
 
