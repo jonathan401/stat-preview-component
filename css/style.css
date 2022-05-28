@@ -138,7 +138,10 @@ img {
     padding: 4rem;
   }
   .card-body-header {
-    font-size: 0.8rem;
+    font-size: 1rem;
+  }
+  .card-body .lead {
+    font-size: 1rem;
   }
 
   .stats {
@@ -146,7 +149,7 @@ img {
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
   .stats .stat {
     margin-right: 3rem;
