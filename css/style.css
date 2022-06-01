@@ -66,6 +66,7 @@ img {
   background: url("../images/image-header-desktop.jpg") no-repeat 50% 50%;
   background-size: cover;
   mix-blend-mode: multiply;
+  opacity: 0.75;
 }
 .card-body {
   padding: 2rem;
@@ -121,7 +122,6 @@ img {
     max-width: none;
     width: 100%;
     display: grid;
-    height: 25rem;
     text-align: left;
     grid-template-columns: repeat(2, 50%);
   }
